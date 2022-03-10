@@ -4,3 +4,11 @@ function toggleShowCompletedHandler (event) {
         item.classList.toggle("hidden");
     }
 }
+
+function trigger(){
+
+    let button = document.querySelector("#buttonUno");
+    button.addEventListener("click", toggleShowCompletedHandler);
+
+}
+trigger();
