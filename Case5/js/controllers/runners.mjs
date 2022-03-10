@@ -4,6 +4,9 @@ export function dataToHTMLList (array) {
             const row = document.createElement("tr");
             const tdName = document.createElement("td");
             const tdTime = document.createElement("td");
+            console.log(item.name);
+            tdName.innerText = item.name;
+            tdTime.innerText = item.time;
             row.append(tdName, tdTime);
             return row;
         }
